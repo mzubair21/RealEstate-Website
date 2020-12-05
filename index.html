@@ -11,6 +11,7 @@
 	<link rel="stylesheet" href="./css/style.css">
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/all.min.css" />
+	<script src="font.js"></script>
 <!--<link rel="stylesheet" href="/bootstrap.css">-->
 	<script src="./js/main.js"></script>
 	<title>Real Estate | Home</title>
@@ -31,11 +32,11 @@
 		<div class="collapse navbar-collapse" id="nav">
 			<ul class="navbar-nav border-left pl-3">
 				<li class="nav-item"><a href="#" class="nav-link font-weight-bold active">Home</a></li>
-				<li class="nav-item"><a href="#" class="nav-link font-weight-bold">About</a></li>
-				<li class="nav-item"><a href="#" class="nav-link font-weight-bold">Services</a></li>
-				<li class="nav-item"><a href="#" class="nav-link font-weight-bold">Gallery</a></li>
-				<li class="nav-item"><a href="#" class="nav-link font-weight-bold">Blog</a></li>
-				<li class="nav-item"><a href="#" class="nav-link font-weight-bold">Contacts</a></li>
+				<li class="nav-item"><a href="#about" class="nav-link font-weight-bold">About</a></li>
+				<li class="nav-item"><a href="#services" class="nav-link font-weight-bold">Services</a></li>
+				<li class="nav-item"><a href="#gallery" class="nav-link font-weight-bold">Gallery</a></li>
+				<li class="nav-item"><a href="#blog" class="nav-link font-weight-bold">Blog</a></li>
+				<li class="nav-item"><a href="#contact" class="nav-link font-weight-bold">Contacts</a></li>
 
 			</ul>
 		</div>
@@ -91,7 +92,7 @@
 
 		</div>
 	</section>
-	<div class="conainer-fluid mb-5">
+	<div class="conainer-fluid mb-5" id="about">
 		<div class="row mb-5">
 			<div class="col-12  landing-page s4 justify-content-center ">
 				<div class="col-md-12 col-sm-10 content hello">
@@ -105,7 +106,7 @@
 		</div>
 	</div>
 	<div class="container-fluid mt-5">
-		<div class="row ">
+		<div class="row" id="services">
 			<div class="col-md-4 col-sm-6 card-container c1 text-center">
 				<div class=" col-md-9 col-sm-11 card-inner pt-5 pb-5 pl-0 pr-0  mt-5 mb-5 ml-auto mr-auto">
 
@@ -167,7 +168,7 @@
 					<a href="#" class="font-weight-bold">MORE ABOUT US</a>
 				</div>
 			</div>
-			<div class="col-md-6 ">
+			<div class="col-md-6 " id="blog">
 				<div class="feed">
     				<h2>LATEST EVENTS</h2>
 				<div class="col-md-12 carousel slide pl-0" data-ride="carousel" id="news">
@@ -230,11 +231,11 @@
 		</div>
 		</div>
 	</section>
-	<section class="featured container-fluid mt-5">
+	<section class="featured container-fluid mt-5 pb-4" id="gallery">
 		<div class="row">
-		<h2 class="pl-4">FEATURED SERVICES</h2>
+		<h2 class="pl-md-4 pl-3 pb-2">FEATURED SERVICES</h2>
 		<div class="col-12 d-md-flex ">
-			<div class="col-sm-12 col-md-3 d-flex d-md-block mb-5 p-0 pl-md-3 pr-md-3">
+			<div class="col-sm-12 col-md-3 d-flex d-md-block mb-4 p-0 pl-md-3 pr-md-3">
 				<div class="col-md-12 col-6 p-0">
 					<img src="assets/darkdining.jpg" class="img-fluid" style="height: 280px">
 				</div>
@@ -244,7 +245,7 @@
 				</div>
 			</div>
 			
-			<div class="col-sm-12 col-md-3 d-flex d-md-block mb-5  p-0 pl-md-3 pr-md-3">
+			<div class="col-sm-12 col-md-3 d-flex d-md-block mb-4  p-0 pl-md-3 pr-md-3">
 				<div class="col-md-12 col-6 p-0">
 					<img src="assets/top.jpeg" class="img-fluid" style="height: 280px">
 				</div>
@@ -254,7 +255,7 @@
 				</div>
 			</div>
 			
-			<div class="col-sm-12 col-md-3 d-flex d-md-block mb-5  p-0 pl-md-3 pr-md-3">
+			<div class="col-sm-12 col-md-3 d-flex d-md-block mb-4  p-0 pl-md-3 pr-md-3">
 				<div class="col-md-12 col-6 p-0">
 					<img src="assets/c2.jpeg" class="img-fluid" style="height: 280px">
 				</div>
@@ -264,7 +265,7 @@
 				</div>
 			</div>
 			
-			<div class="col-sm-12 col-md-3 d-flex d-md-block mb-5  p-0 pl-md-3 pr-md-3">
+			<div class="col-sm-12 col-md-3 d-flex d-md-block mb-4  p-0 pl-md-3 pr-md-3">
 				<div class="col-md-12 col-6 p-0">
 					<img src="assets/footer.jpeg" class="img-fluid" style="height: 280px">
 				</div>
@@ -274,23 +275,101 @@
 				</div>
 			</div>
 		</div>
+		<a href="#" class="font-weight-bold pl-4 cyan">VIEW ALL SERVICES</a>
 		</div>
 	</section>
-	
-	<footer class="row">
-	<div class="col-12 d-flex">
-		<div class="logo">
+	<section class="col-10 m-auto border-top">
+		<div class="row border-bottom">
+			<div class="col-md-6 pop-links mt-5">
+				<h3>POPULAR LINKS</h3>		
+				<div class="row mt-5">
+					<div class="col-md-6">
+						<p>investor Relation</p>
+						<p>Work</p>
+						<p>Media Room</p>
+						<p>Request Information</p>
+						<p>Contact Us</p>
+					</div>
+					<div class="col-md-6">
+						<p>Our Promise to You</p>
+						<p>Corporate Responsibility</p>
+						<p>History</p>
+						<p>Locations</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 mt-5">
+				<h3>WR'RE ON FACEBOOK</h3>
+				<div class="col-12 mt-5">
+				<div class="row social-des">
+					<div class="col-3" style="min-width:86px">
+						<i class="fab fa-facebook-square fa-4x cyan"></i>
+					</div>
+					<div class="col-md-8 col-9 pl-0 pr-md-3 pr-0">
+						<h6 class="f-15">Connector al adpist leocean</h6>
+						<p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. <a href="#" class="cyan">Read More</a></p>
+						<p>
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="container-fluid mt-5 mb-5">
+		<p class="f-11 text-center col-10 m-auto">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. <a href="#" class="cyan">Read More</a></p>
+		<div class="row col-8 ml-auto mr-auto mt-5 text-center social-p">
+			<div class="col-md-4  mb-md-0 mb-5">
+				<i class="fas fa-mobile-alt fa-6x cyan"></i>
+				<p class="m-0 f-12 mt-5">+1 800 559 6580</p>
+				<p class="m-0 f-12">+1 800 559 6580</p>
+			</div>
+			<div class="col-md-4  mb-md-0 mb-5">
+				<i class="fal fa-map-marked-alt fa-6x cyan"></i>
+				<p class="m-0 f-12 mt-5">9870 ST VINCENT PLACE,</p>
+				<p class="m-0 f-12">GLASGOW, DC 45 FR 45.</p>
+			</div>
+			<div class="col-md-4">
+				<i class="fal fa-envelope-open-text fa-6x cyan"></i>
+				<p class="m-0 f-12 mt-5">MAIL@DEMOLINK.ORG</p>
+			</div>
+		</div>
+	</section>
+	<section class="pt-5" id="contact">
+     <div class="col-12 p-0" style="height:40vw;z-index:-1;overflow: hidden">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26587.08560785537!2d73.03401034612075!3d33.59529561687672!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38df94834d87f5a3%3A0x506e17bedd22f2e7!2sSaddar%2C%20Rawalpindi%2C%20Punjab%2046000!5e0!3m2!1sen!2s!4v1607197019705!5m2!1sen!2s" width="1360" height="620" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" style="width: 100%;height: 100%"></iframe>
+      </div>
+      <div class="container-fluid">
+      <div class="row map-banner">
+        <div class="col-4 bg-info d-flex text-light">
+          <h1 class="font-weight-bolder d-flex w-100 justify-content-center align-self-center">Stay Updated</h1>
+        </div>
+        <div class="col-4 bg-dark triangle-right d-flex text-muted" >
+          <p class="font-weight-bolder d-flex w-100 justify-content-center align-self-center pt-3" >On future events blogs and and updates</p>
+        </div>
+        <div class="col-4  d-flex triangle-right" id="triangle-dark">
+          <p class="text-secondary d-flex w-100 justify-content-center align-self-center pt-4">aliquip ex ea commodo consequat</p>
+        </div>
+      </div>
+    </div>
+	</section>
+	<footer style="max-height:330px">
+		<div class="row pt-5">
+			<div class="col-12 col-md-3 pl-md-5 ml-md-5 f-logo pl-0 ml-0" style="order: 0">
+				<div class="logo ">
 				<h4 class=" m-0 p-0 text font-weight-bold"><span class="f-text">real</span><span class="l-text">estate</span></h4>
 				<p class=" m-0 text-secondary">Best proposals</p>
 			</div>
-		<div class="social ml-auto mr-4">
-<span class="i"><i class="fab fa-facebook-f"></i></span>
-	<span class="i"><i class="fab fa-whatsapp"></i></span>
-	<span class="i"><i class="fab fa-twitter"></i></span>
-	<span class="i"><i class="fab fa-pinterest-p"></i></span>
-	<span class="i"><i class="fab fa-linkedin-in"></i></span>
-</div>
-	</div>
+			</div>
+			<div class="col-12 col-md-4 ml-md-auto pl-md-5 pl-0 ml-0 mb-5 mb-md-0 p-0">
+				<div class="f-social" style="order: 1">
+					<span class="i"><i class="fab fa-facebook-f"></i></span>
+					<span class="i"><i class="fab fa-whatsapp"></i></span>
+					<span class="i"><i class="fab fa-twitter"></i></span>
+					<span class="i"><i class="fab fa-pinterest-p"></i></span>
+					<span class="i"><i class="fab fa-linkedin-in"></i></span>
+				</div>
+			</div>
+		</div>
 	</footer>
 	<!-- Optional JavaScript -->
 	<!-- jQuery first, then Bootstrap JS -->

@@ -9,12 +9,17 @@ font-family: 'Ubuntu', sans-serif;*/
 	--ubuntu:'Ubuntu', sans-serif;
 	--cyan:#62bfe6
 }
+*{
+	scroll-behavior: smooth;
+}
 img{
 	width: 100%;
 	height: 100%;
 }
 body{
 	font-family: var(--ubuntu);
+	overflow-x: hidden;
+	
 }
 .navbar{
 	background:transparent;
@@ -64,19 +69,19 @@ top: 0%;
 z-index: -1;
 }
 .landing-page.s1{
-	background-image:url(/assets/landing.jpeg);
+	background-image:url(../assets/landing.jpeg);
 }
 .landing-page.s2{
-	background-image:url(/assets/housing.jpeg);
+	background-image:url(../assets/housing.jpeg);
 	background-position: right;
 }
 .landing-page.s3{
-	background-image:url(/assets/discover.jpeg);
+	background-image:url(../assets/discover.jpeg);
 	background-size: contain;
 	background-position: right;
 }
 .landing-page.s4{
-	background-image:url(/assets/hello.jpg);
+	background-image:url(../assets/hello.jpg);
 	background-position: center;
 }
 .landing-page .content{
@@ -139,24 +144,24 @@ z-index: -1;
 	background-position: center;
 }
 .card-container.c1{
-		background-image:url(/assets/c1.jpeg);
+		background-image:url(../assets/c1.jpeg);
 }
 .card-container.c3{
-		background-image:url(/assets/c4.jpeg);
+		background-image:url(../assets/c4.jpeg);
 }
 .card-container.c4{
-		background-image:url(/assets/building.jpeg);
+		background-image:url(../assets/building.jpeg);
 }
 .card-container.c2{
-		background-image:url(/assets/footer.jpeg);
+		background-image:url(../assets/footer.jpeg);
 	background-size: contain;
 	background-position: top;
 }
 .card-container.c5{
-		background-image:url(/assets/top.jpeg);
+		background-image:url(../assets/top.jpeg);
 }
 .card-container.c6{
-		background-image:url(/assets/housing.jpeg);
+		background-image:url(../assets/housing.jpeg);
 }
 .card-inner{
 	color: white;
@@ -168,7 +173,7 @@ background: var(--cyan);
 .news-feed p,.featured p{
 	font-size: 12px;
 }
-.des .date,.feed a{
+.des .date,.feed a,.cyan{
 	color: var(--cyan);
 }
 .feed img{
@@ -182,28 +187,65 @@ background: var(--cyan);
 	width: 12px;
 	height: 12px;
 }
+.pop-links p{
+	margin: 0px;
+	font-size: 14px;
+}
+
+
+
 footer{
-	background: url(/assets/footer.jpeg);
+	background: url(../assets/footer.jpeg);
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	height: 40vh;
+	height: 40vw;
 }
-.footer .social{
-	display: none;
-		margin: 0px;
-		padding-top: 0px;
-		padding-right: 0px;
-		padding-left: 0px; 
-		width: 100%;
-		text-align: center;
-	}
+.f-social .i{
+ padding-right: 20px!important;	
+ font-size: 20px;
+}
 
-
-
-
-
-
+.social-des p{
+	font-size: 12px;
+}
+.social-p p{
+	font-weight: 500;
+}
+.triangle-right {
+      width: 0;
+      height: 0;
+      border-top: 50px solid transparent;
+      border-left: 40px solid #17a2b8!important;
+      border-bottom: 50px solid transparent;
+    }
+    #triangle-dark {
+      border-left: 40px solid #343a40!important;
+    }
+.f-11{
+	font-size: 11px;
+}
+.f-12{
+	font-size: 12px;
+}
+.f-13{
+	font-size: 13px;
+}
+.f-14{
+	font-size: 14px;
+}
+.f-18{
+	font-size: 18px;
+}
+.f-20{
+	font-size: 20px;
+}
+.f-22{
+	font-size: 22px;
+}
+.f-24{
+	font-size: 24px;
+}
 
 
 
@@ -271,5 +313,19 @@ footer{
 	}
 	.landing-page h6{
 		opacity: 1;
-	}	
+	}
+	.map-banner h1{
+		font-size: 4vw;
+	}
+	.map-banner p{
+		font-size: 2.3vw;
+	}
+	.f-social{
+		order: 0!important;
+		text-align: center!important;
+	}
+	.f-logo{
+		order: 1!important;
+		text-align: center!important;
+	}
 }
